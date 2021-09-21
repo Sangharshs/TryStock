@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    tools:context=".Fragments.BalanceSummeryFragment">
+<ProgressBar
+    android:id="@+id/pb"
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:progressTint="@color/purple_700"/>
+ <LinearLayout
+     android:id="@+id/balance_data"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:orientation="vertical">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="@color/black"
+         android:text="Balance Summery"
+         android:textSize="20sp"
+         android:layout_margin="10dp"/>
+
+     <include
+         layout="@layout/game_matches_item"/>
+
+
+     <ProgressBar
+         android:layout_marginTop="40dp"
+         android:layout_marginBottom="40dp"
+         android:layout_gravity="center"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/fetchwalletProgressBar"/>
+     <LinearLayout
+         android:id="@+id/walletDataLayout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:visibility="gone">
+     <LinearLayout
+         android:layout_margin="6dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+         <TextView
+
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:text="Cash"
+             android:textSize="17sp"
+             android:textColor="@color/black"
+             android:layout_marginStart="15dp"/>
+
+
+         <com.google.android.material.textview.MaterialTextView
+             android:id="@+id/cashAmountTV"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="0"
+             android:textSize="17sp"
+             android:textColor="@color/black"
+             android:layout_marginEnd="15dp"/>
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_margin="6dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+         <TextView
+             android:id="@+id/winningFEETV"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:text="Winnings"
+             android:textSize="17sp"
+             android:textColor="@color/black"
+             android:layout_marginStart="15dp"/>
+
+
+         <com.google.android.material.textview.MaterialTextView
+             android:id="@+id/winningTVTEXT"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="0"
+             android:textSize="17sp"
+             android:textColor="@color/black"
+             android:layout_marginEnd="15dp"/>
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_margin="6dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+         <TextView
+
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:text="Bonus"
+             android:textSize="17sp"
+             android:textColor="@color/black"
+             android:layout_marginStart="15dp"/>
+
+
+         <com.google.android.material.textview.MaterialTextView
+             android:id="@+id/bonusTV"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="0"
+             android:textSize="17sp"
+             android:textColor="@color/black"
+             android:layout_marginEnd="15dp"/>
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_marginStart="10dp"
+         android:layout_marginEnd="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+        android:background="@color/black"/>
+
+     <LinearLayout
+         android:layout_margin="6dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+         <com.google.android.material.textview.MaterialTextView
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:text="Total"
+             android:textSize="20sp"
+             android:textColor="@color/black"
+             android:layout_marginStart="15dp"/>
+
+
+         <com.google.android.material.textview.MaterialTextView
+             android:id="@+id/d_total_amount"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="0"
+             android:textSize="20sp"
+             android:textColor="@color/black"
+             android:layout_marginEnd="15dp"/>
+     </LinearLayout>
+     </LinearLayout>
+     <Button
+         android:id="@+id/buttonContinue"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom"
+         android:text="Continue"
+         android:background="@drawable/botttom_navigaion_bg"/>
+
+     <Button
+         android:visibility="gone"
+         android:id="@+id/buttonPayFromWallet"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom"
+         android:text="Continue"
+         android:background="@drawable/botttom_navigaion_bg"/>
+
+
+ </LinearLayout>
+</FrameLayout>

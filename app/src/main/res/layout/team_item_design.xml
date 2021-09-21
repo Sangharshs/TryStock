@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_stock_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company Name"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="13sp"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:buttonTint="@color/holo_green_dark"
+                    android:id="@+id/buybtn"
+                    android:visibility="gone"
+                    android:saveEnabled="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:visibility="gone"
+                    android:buttonTint="@color/red"
+                    android:id="@+id/sellbtn"
+                    android:saveEnabled="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/textView_buy_sell_value"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Buy"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1208"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:gravity="center"/>
+
+            <TextView
+                android:fontFamily="@font/poppins_semibold"
+                android:id="@+id/textView_price"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(1.24%)"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2000"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textAlignment="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

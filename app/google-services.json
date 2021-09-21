@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "473514991817",
+    "project_id": "myturn-9d70a",
+    "storage_bucket": "myturn-9d70a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473514991817:android:3b601ce093709dfa37ad18",
+        "android_client_info": {
+          "package_name": "com.apps.myturn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "473514991817-ukpik1telqc48ia367s8fl5cskic00a0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apps.myturn",
+            "certificate_hash": "85988456a0d382ac7541bea72da878ef66575236"
+          }
+        },
+        {
+          "client_id": "473514991817-lbh7qsg2epkuoohg0v1tvc41il7ebmad.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWWX_nKjnnHLe1VnR2M_Ioyee9ETzS3AQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "473514991817-lbh7qsg2epkuoohg0v1tvc41il7ebmad.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apps.myturn">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TryStock">
+        <activity android:name=".ReadNewsActivity"></activity>
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".UpdateTeamActivity" />
+        <activity android:name=".VerifyBankDetailsActivity" />
+        <activity android:name=".AddCashActivity" />
+        <activity android:name=".MyWalletActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".GoproActivity" />
+        <activity android:name=".Team_List_Activity" />
+        <activity android:name=".JoinMatchActivity" />
+        <activity android:name=".MatchDetailsActivity" />
+        <activity android:name=".GameMatchesActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MassageActivity" />
+        <activity android:name=".VeriyfiotpActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_baseline_arrow_back_ios_24" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/c1" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+    </application>
+
+</manifest>

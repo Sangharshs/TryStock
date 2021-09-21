@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/match_name_TextView"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="Game Name"
+                android:textSize="16sp" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/match_time_Textview"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textSize="16sp"
+                android:text="12 July 2021" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="#EAE9E6" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prize Pool"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/prizePool"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="29000"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="Entry"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/entryFee"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="14"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Spots"
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp" />
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/joined_user"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:id="@+id/total_user"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+            <com.sasank.roundedhorizontalprogress.RoundedHorizontalProgressBar
+                android:id="@+id/progress_bar_1_horizontal"
+                android:layout_marginTop="6dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:maxHeight="7dp"
+                android:minHeight="7dp"
+                android:progress="70"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:backgroundColor="@color/grey"
+                app:progressColor="#AEAEAE"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="3dp"
+            android:background="#FFF7F7"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:id="@+id/joinMatchButton"
+                android:text="Join Now"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_button"/>
+
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                 />
+
+            <Button
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textSize="10sp"
+                android:id="@+id/detailsButton"
+                android:fontFamily="@font/poppins_semibold"
+                android:background="@drawable/rounded_button"
+                android:text="Details" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Fragments.LiveFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="match_parent"
+        android:id="@+id/live_matches_recyclerView"
+        />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/quoteCard"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/quote"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="You don't have joined any upcoming matches. Please joined Matches" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:backgroundTint="@color/purple_500"
+                android:textColor="@color/white"
+                android:id="@+id/makemyteam1"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Make My Team"/>
+        </LinearLayout>
+
+
+</LinearLayout>

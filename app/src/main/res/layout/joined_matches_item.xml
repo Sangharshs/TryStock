@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp"
+    android:layout_margin="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/teamName"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Team Name"/>
+
+            <TextView
+                android:fontFamily="@font/poppins_semibold"
+                android:id="@+id/dateText"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="04 Aug 2021"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="#EAE9E6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+               <TextView
+                android:textAlignment="center"
+                android:layout_margin="5dp"
+                   android:fontFamily="@font/poppins_semibold"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prize Poo\"/>
+
+                <TextView
+                    android:id="@+id/prizePOOLAMOUT"
+                    android:textAlignment="center"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12000"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_margin="5dp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Entry Fee"/>
+
+                <TextView
+                    android:id="@+id/entryFEETEXT"
+                    android:textAlignment="center"
+                    android:layout_margin="5dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="18 Rs"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_margin="5dp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Participated"/>
+
+                <TextView
+                    android:fontFamily="@font/poppins_semibold"
+                    android:id="@+id/participatedNUMBEr"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:layout_margin="5dp"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="567"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:background="#FFF7F7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/matchNAMETEXT"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_height="wrap_content"
+                android:text="Match Name"/>
+
+            <Button
+                android:id="@+id/editButtonJ"
+         android:layout_margin="5dp"
+                android:background="@drawable/rounded_border"
+                android:layout_width="wrap_content"
+                android:textSize="10sp"
+                android:layout_height="33dp"
+                android:text="Edit"
+                />
+
+            <Button
+                android:id="@+id/detailsButtonJ"
+                android:layout_margin="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rounded_border"
+                android:layout_width="wrap_content"
+                android:textSize="10sp"
+                android:layout_height="33dp"
+                android:text="Details"
+                />
+
+
+
+        </LinearLayout>
+
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

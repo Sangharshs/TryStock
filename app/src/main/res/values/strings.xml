@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyTurn</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_notification_channel_id" />
+    <string name="invite_your_friends_using_your_referral_code_ask_them_to_enter_your_referral_code_while_sign_up">Invite your friends using your referral code. Ask them to enter your referral code while sign up.</string>
+
+
+</resources>

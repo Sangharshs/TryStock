@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".VerifyBankDetailsActivity">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_gravity="center"
+                android:id="@+id/goBackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                app:tint="@color/black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/ggh"
+                    android:textColor="@color/c3"/>
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Verify Bank &amp; Pan Details"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/ggh"
+                    android:textColor="@color/c3"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+<!--    <com.google.android.material.tabs.TabLayout-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:id="@+id/tabs"-->
+<!--        app:tabSelectedTextColor="@color/c3"-->
+<!--        app:tabIndicatorColor="@color/c3"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Pancard"-->
+<!--            />-->
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Bank Details"-->
+<!--            />-->
+
+
+<!--    </com.google.android.material.tabs.TabLayout>-->
+
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/viewpager22"-->
+<!--        app:layout_anchor="@+id/tabs"-->
+<!--        app:layout_anchorGravity="bottom"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        />-->
+
+
+    <TextView
+        android:padding="10dp"
+        android:layout_marginTop="2sp"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verification Details"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:layout_marginStart="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginEnd="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+
+            android:padding="15dp"
+            android:id="@+id/pan_Name"
+            android:layout_height="?attr/actionBarSize"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Pan Number"
+        android:layout_marginStart="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginEnd="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+
+            android:padding="15dp"
+            android:id="@+id/pan_Number"
+            android:layout_height="?attr/actionBarSize"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:padding="10dp"
+        android:layout_marginTop="2sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Account Holder Name"
+        android:layout_marginStart="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginEnd="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+
+            android:padding="15dp"
+            android:id="@+id/bank_account_holder_name"
+            android:layout_height="?attr/actionBarSize"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Bank Account Number"
+        android:layout_marginStart="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginEnd="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+
+            android:padding="15dp"
+            android:id="@+id/bank_account_number"
+            android:layout_height="?attr/actionBarSize"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="IFSC Code"
+        android:layout_marginStart="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginEnd="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+
+            android:padding="15dp"
+            android:id="@+id/account_ifsc"
+            android:layout_height="?attr/actionBarSize"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:text="SUBMIT"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

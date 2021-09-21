@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#FFF7DE"
+    app:cardCornerRadius="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/poppins_semibold"
+                android:id="@+id/textView_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textAlignment="textStart"
+                android:gravity="center"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:fontFamily="@font/poppins_semibold"
+                android:id="@+id/textView_points"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Points"
+                android:textColor="@color/purple_500"
+                android:textSize="14sp"
+                android:textAlignment="textStart"
+                android:gravity="center"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Rank"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_gravity="center"
+                android:id="@+id/textView_rank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="end"
+                android:text="2"
+                android:textColor="@color/purple_500"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
